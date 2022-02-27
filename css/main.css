@@ -1,0 +1,52 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg_color);
+  color: var(--main_color);
+}
+
+:root{
+  --bg_color: #F2F2F2;
+  --main_color: #fff;
+}
+
+.dark{
+  --bg_color: #000;
+  --main__color: #fff;
+}
+
+.btn-changer{
+  --text-color: #fff;
+  --text-main-color: #000;
+}
+
+
+.header__button::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/moon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 10px;
+  right: 115px;
+}
+
+
+.form__input::before{
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 1px;
+  right:  115px;
+  z-index: 3;
+}
